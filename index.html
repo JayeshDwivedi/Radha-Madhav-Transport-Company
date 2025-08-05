@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Radha Madhav Transport Company{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="hero-title">Reliable Transport Solutions Across Uttar Pradesh</h1>
+                <p class="hero-subtitle">With 15+ years of experience, we provide trusted container transport and parcel delivery services throughout UP with 100% client satisfaction.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg me-3">Our Services</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">Get Quote</a>
+                </div>
+                <div class="hero-stats mt-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>20+</h3>
+                                <p>Containers</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>15+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="hero-image">
+                    <img src="https://pixabay.com/get/gaf7a839987f2e73c1f3a0fbcacfcfde369b4e98db6b560d3be78fb77ee942ed33a2b301422d226fcc929ff1b0e551a4e679c89fb9f564718a338aa57f2622afc_1280.jpg" alt="Transport Trucks" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="services-overview py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Core Services</h2>
+                <p class="section-subtitle">Comprehensive transport solutions tailored to your business needs</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h4>Container Transport</h4>
+                    <p>Safe and secure container transportation with our fleet of 20+ modern vehicles.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Safe</span>
+                        <span class="feature-tag">Reliable</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h4>Parcel Delivery</h4>
+                    <p>Daily parcel service across major cities in Uttar Pradesh with on-time delivery guarantee.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Fast</span>
+                        <span class="feature-tag">Trackable</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h4>State-wide Coverage</h4>
+                    <p>Complete coverage across Uttar Pradesh including Kanpur, Lucknow, Varansi, and more.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Comprehensive</span>
+                        <span class="feature-tag">Accessible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Highlights -->
+<section class="company-highlights py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <img src="https://pixabay.com/get/g55f28941f0250263c8a9a2869f54f6e68db25461348c5cb408d59f991668fe9b599a9d682c92a94d30e8fa6b7d7400300fe9fba4adecada2d08ca64f26dddc10_1280.jpg" alt="Cargo Containers" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <h2 class="section-title">Why Choose Radha Madhav Transport?</h2>
+                <p class="section-subtitle mb-4">Your trusted partner for all transport and logistics needs in Uttar Pradesh</p>
+                
+                <div class="highlight-items">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h5>On-Time Delivery</h5>
+                            <p>Guaranteed on-time delivery with real-time tracking and updates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h5>Safe & Secure</h5>
+                            <p>Advanced security measures and insurance coverage for all shipments.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h5>Experienced Team</h5>
+                            <p>15+ years of experience with hundreds of satisfied customers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h5>Affordable Rates</h5>
+                            <p>Competitive pricing with transparent billing and no hidden charges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Network Coverage -->
+<section class="network-coverage py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Network Coverage</h2>
+                <p class="section-subtitle">Serving major cities across Uttar Pradesh</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Kanpur</h5>
+                    <p>Daily Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Lucknow</h5>
+                    <p>Daily Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Varanasi</h5>
+                    <p>Daily Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Gorakhpur</h5>
+                    <p>Daily Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Allahabad</h5>
+                    <p>Daily Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Agra</h5>
+                    <p>Regular Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>Meerut</h5>
+                    <p>Regular Service</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="800">
+                <div class="city-card">
+                    <i class="fas fa-map-pin"></i>
+                    <h5>All UP Cities</h5>
+                    <p>On Request</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-white mb-3">Ready to Ship with Us?</h2>
+                <p class="text-white-50 mb-4">Get instant quotes and book your shipment today. Our team is ready to help you with all your transport needs.</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg me-3">Get Quote Now</a>
+                    <a href="tel:+919374784899" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

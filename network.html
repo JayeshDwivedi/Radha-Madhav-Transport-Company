@@ -1,0 +1,527 @@
+{% extends "base.html" %}
+
+{% block title %}Our Network - Radha Madhav Transport Company{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title" data-aos="fade-up">Our Network</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active">Our Network</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Network Overview -->
+<section class="network-overview py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <h2 class="section-title">Comprehensive Coverage Across Uttar Pradesh</h2>
+                <p class="section-subtitle">Connecting cities, towns, and businesses throughout the state</p>
+                <p>Our extensive network spans across Uttar Pradesh, connecting major cities and towns with reliable daily transport services. With strategically located offices and a fleet of 20+ modern containers, we ensure seamless connectivity and efficient delivery across the state.</p>
+                <p>Whether you need to transport goods between major metropolitan areas or reach smaller towns, our comprehensive network ensures your cargo reaches its destination safely and on time.</p>
+                
+                <div class="network-stats">
+                    <div class="row">
+                        <div class="col-md-4 col-6 mb-3">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Cities Covered</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mb-3">
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Daily Routes</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mb-3">
+                            <div class="stat-item">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Major Offices</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <img src="https://pixabay.com/get/g4efeda07705124af7894814758dc6fbb3efc33d52dad4f21c7b8c1b0cfdd62739cdf406796f2d35c739e4c13b94e87ca32a3aebd7d5508fb2766e32954fed3f7_1280.jpg" alt="Our Network" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Primary Routes -->
+<section class="primary-routes py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Primary Service Routes</h2>
+                <p class="section-subtitle">Daily scheduled services on our most popular routes</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="route-card featured">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Kanpur Route</h4>
+                        <span class="route-badge">Daily Service</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Primary Hub City</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Daily Departure: 6:00 AM</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Multiple Daily Trips</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>7435887500</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Lucknow Route</h4>
+                        <span class="route-badge">Daily Service</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>State Capital</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Daily Departure: 7:00 AM</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Express Service Available</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>9453208699, 8756730726</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Varanasi Route</h4>
+                        <span class="route-badge">Daily Service</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cultural Capital</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Daily Departure: 8:00 AM</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Regular Service</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact Main Office</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Gorakhpur Route</h4>
+                        <span class="route-badge">Daily Service</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Eastern UP Hub</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Daily Departure: 9:00 AM</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Container Service</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact Main Office</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Allahabad Route</h4>
+                        <span class="route-badge">Regular Service</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sangam City</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Regular Schedule</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Full Load Service</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact Main Office</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>All UP Cities</h4>
+                        <span class="route-badge">On Request</span>
+                    </div>
+                    <div class="route-details">
+                        <div class="route-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Statewide Coverage</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-clock"></i>
+                            <span>Flexible Scheduling</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Custom Routes</span>
+                        </div>
+                    </div>
+                    <div class="route-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>9374784899</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Office Locations -->
+<section class="office-locations py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Office Locations</h2>
+                <p class="section-subtitle">Strategically located offices for better service coverage</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="office-card main-office">
+                    <div class="office-header">
+                        <div class="office-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="office-title">
+                            <h3>Head Office</h3>
+                            <span class="office-badge">Main Operations</span>
+                        </div>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-address">
+                            <h5>Valsad, Gujarat Office</h5>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Gala No.: A/4, 100 Shead Area,<br>
+                                Nr. HiTech Inks, Mahavir Nagar,<br>
+                                G.I.D.C., VAPI, Dist. Valsad 396 195
+                            </p>
+                        </div>
+                        <div class="office-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>08980180842, 9377166699</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>radhamadhav11@rediffmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="office-card">
+                    <div class="office-header">
+                        <div class="office-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="office-title">
+                            <h3>Branch Office</h3>
+                            <span class="office-badge">Regional Hub</span>
+                        </div>
+                    </div>
+                    <div class="office-details">
+                        <div class="office-address">
+                            <h5>Thane, Maharashtra Office</h5>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Jai Bhagwan Complex,<br>
+                                Gala No. 3, Jay Bhagwan Compound,<br>
+                                Near Jai Pushpa Kata, Purna Village,<br>
+                                Bhiwandi. Dist. Thane - 421302
+                            </p>
+                        </div>
+                        <div class="office-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>9022825977, 7039037742</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Regional Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coverage Map -->
+<section class="coverage-map py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Service Coverage Map</h2>
+                <p class="section-subtitle">Visual representation of our service network across Uttar Pradesh</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-bg">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="map-overlay">
+                            <h3>Uttar Pradesh Service Network</h3>
+                            <p>We cover all major cities and towns across Uttar Pradesh with regular and on-demand services.</p>
+                            <div class="map-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color daily"></span>
+                                    <span>Daily Service Routes</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color regular"></span>
+                                    <span>Regular Service Routes</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color ondemand"></span>
+                                    <span>On-Demand Service Areas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas List -->
+<section class="service-areas-list py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Complete Service Areas</h2>
+                <p class="section-subtitle">Comprehensive list of cities and towns we serve</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="area-category">
+                    <h4><i class="fas fa-star text-warning"></i> Major Cities (Daily Service)</h4>
+                    <ul class="area-list">
+                        <li><i class="fas fa-check"></i> Kanpur</li>
+                        <li><i class="fas fa-check"></i> Lucknow</li>
+                        <li><i class="fas fa-check"></i> Varanasi</li>
+                        <li><i class="fas fa-check"></i> Gorakhpur</li>
+                        <li><i class="fas fa-check"></i> Allahabad (Prayagraj)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="area-category">
+                    <h4><i class="fas fa-circle text-primary"></i> Regular Service Cities</h4>
+                    <ul class="area-list">
+                        <li><i class="fas fa-check"></i> Agra</li>
+                        <li><i class="fas fa-check"></i> Meerut</li>
+                        <li><i class="fas fa-check"></i> Bareilly</li>
+                        <li><i class="fas fa-check"></i> Aligarh</li>
+                        <li><i class="fas fa-check"></i> Mathura</li>
+                        <li><i class="fas fa-check"></i> Firozabad</li>
+                        <li><i class="fas fa-check"></i> Saharanpur</li>
+                        <li><i class="fas fa-check"></i> Muzaffarnagar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="area-category">
+                    <h4><i class="fas fa-circle text-info"></i> On-Demand Service Areas</h4>
+                    <ul class="area-list">
+                        <li><i class="fas fa-check"></i> Ghaziabad</li>
+                        <li><i class="fas fa-check"></i> Noida</li>
+                        <li><i class="fas fa-check"></i> Faizabad</li>
+                        <li><i class="fas fa-check"></i> Jhansi</li>
+                        <li><i class="fas fa-check"></i> Moradabad</li>
+                        <li><i class="fas fa-check"></i> Rampur</li>
+                        <li><i class="fas fa-check"></i> Shahjahanpur</li>
+                        <li><i class="fas fa-check"></i> All Other UP Cities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Network Growth -->
+<section class="network-growth py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="section-title text-white">Expanding Our Reach</h2>
+                <p class="section-subtitle text-white-50">Continuous growth to serve you better</p>
+                <p class="text-white-50">We are constantly expanding our network to reach more cities and provide better connectivity. Our growth strategy focuses on identifying key routes and establishing reliable service corridors.</p>
+                
+                <div class="growth-metrics">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="metric-item">
+                                <div class="metric-number">50+</div>
+                                <div class="metric-label">Cities Connected</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="metric-item">
+                                <div class="metric-number">100+</div>
+                                <div class="metric-label">Routes Covered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="growth-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>New Routes Monthly</h5>
+                            <p>We add new service routes based on customer demand and market analysis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Service Frequency Increase</h5>
+                            <p>Popular routes get increased service frequency for better customer convenience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Pan-India Vision</h5>
+                            <p>Planning to expand beyond UP to serve customers across North India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-white mb-3">Need Service to a New Location?</h2>
+                <p class="text-white-50 mb-4">Can't find your city in our network? Contact us for custom routes and on-demand services. We're always expanding!</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg me-3">Request New Route</a>
+                    <a href="tel:+919374784899" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

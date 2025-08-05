@@ -1,0 +1,394 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Radha Madhav Transport Company{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-bg"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title" data-aos="fade-up">Contact Us</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active">Contact Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Ready to ship with us? Contact our team for quotes, bookings, or any questions about our transport services.</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <div class="contact-details">
+                        <p><strong>Primary:</strong><br>
+                        <a href="tel:+919374784899">+91 9374784899</a><br>
+                        <a href="tel:+919930120457">+91 9930120457</a></p>
+                        
+                        <p><strong>Kanpur:</strong><br>
+                        <a href="tel:+917435887500">+91 7435887500</a></p>
+                        
+                        <p><strong>Lucknow:</strong><br>
+                        <a href="tel:+919453208699">+91 9453208699</a><br>
+                        <a href="tel:+918756730726">+91 8756730726</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <div class="contact-details">
+                        <p><strong>General Inquiries:</strong><br>
+                        <a href="mailto:radhamadhav11@rediffmail.com">radhamadhav11@rediffmail.com</a></p>
+                        
+                        <p><strong>Business Hours:</strong><br>
+                        Monday - Saturday: 9:00 AM - 7:00 PM<br>
+                        Sunday: 10:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Visit Us</h4>
+                    <div class="contact-details">
+                        <p><strong>Head Office:</strong><br>
+                        Gala No.: A/4, 100 Shead Area,<br>
+                        Nr. HiTech Inks, Mahavir Nagar,<br>
+                        G.I.D.C., VAPI, Dist. Valsad 396 195</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form & Business Card -->
+<section class="contact-form-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8" data-aos="fade-right">
+                <div class="contact-form-card">
+                    <h3 class="mb-4">Send Us a Message</h3>
+                    <form method="POST" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">Service Required</label>
+                                <select class="form-select" id="service" name="service">
+                                    <option value="">Select Service</option>
+                                    <option value="container-transport">Container Transport</option>
+                                    <option value="parcel-delivery">Parcel Delivery</option>
+                                    <option value="cargo-shipping">Cargo Shipping</option>
+                                    <option value="express-delivery">Express Delivery</option>
+                                    <option value="warehousing">Warehousing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="pickup" class="form-label">Pickup Location</label>
+                                <input type="text" class="form-control" id="pickup" name="pickup" placeholder="Enter pickup city/address">
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="delivery" class="form-label">Delivery Location</label>
+                                <input type="text" class="form-control" id="delivery" name="delivery" placeholder="Enter delivery city/address">
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Please provide details about your shipment requirements..." required></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agree" required>
+                                    <label class="form-check-label" for="agree">
+                                        I agree to the terms and conditions and privacy policy *
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                                <button type="reset" class="btn btn-outline-secondary btn-lg ms-2">
+                                    <i class="fas fa-redo me-2"></i>Reset Form
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" data-aos="fade-left">
+                <div class="business-card-section">
+                    <h4 class="mb-3">Business Card</h4>
+                    <div class="business-card">
+                        <img src="{{ url_for('static', filename='images/business-card.svg') }}" alt="Radha Madhav Transport Company Business Card" class="img-fluid rounded shadow">
+                    </div>
+                    
+                    <div class="business-info mt-4">
+                        <h5>Company Registration</h5>
+                        <div class="reg-info">
+                            <div class="reg-item">
+                                <strong>GSTIN:</strong> 24APXPD7268R1ZT
+                            </div>
+                            <div class="reg-item">
+                                <strong>Proprietor:</strong> Rekha JN Dwivedi
+                            </div>
+                            <div class="reg-item">
+                                <strong>Established:</strong> 2009
+                            </div>
+                            <div class="reg-item">
+                                <strong>Experience:</strong> 15+ Years
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-contact mt-4">
+                        <h5>Quick Contact</h5>
+                        <div class="quick-buttons">
+                            <a href="tel:+919374784899" class="btn btn-success btn-sm mb-2">
+                                <i class="fas fa-phone me-2"></i>Call Now
+                            </a>
+                            <a href="https://wa.me/919374784899" class="btn btn-success btn-sm mb-2" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                            </a>
+                            <a href="mailto:radhamadhav11@rediffmail.com" class="btn btn-primary btn-sm mb-2">
+                                <i class="fas fa-envelope me-2"></i>Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Office Locations with Map -->
+<section class="office-locations py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Office Locations</h2>
+                <p class="section-subtitle">Visit us at our convenient office locations</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="office-location-card">
+                    <div class="office-header">
+                        <h4><i class="fas fa-building me-2"></i>Head Office - Valsad, Gujarat</h4>
+                        <span class="office-badge">Main Operations</span>
+                    </div>
+                    <div class="office-content">
+                        <div class="office-address">
+                            <p><strong>Address:</strong><br>
+                            Gala No.: A/4, 100 Shead Area,<br>
+                            Nr. HiTech Inks, Mahavir Nagar,<br>
+                            G.I.D.C., VAPI, Dist. Valsad 396 195</p>
+                        </div>
+                        <div class="office-contact">
+                            <p><strong>Phone:</strong> <a href="tel:+918980180842">08980180842</a>, <a href="tel:+919377166699">9377166699</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:radhamadhav11@rediffmail.com">radhamadhav11@rediffmail.com</a></p>
+                        </div>
+                        <div class="office-services">
+                            <h6>Services Available:</h6>
+                            <ul>
+                                <li>Container Booking</li>
+                                <li>Administrative Support</li>
+                                <li>Customer Service</li>
+                                <li>Billing & Accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="office-location-card">
+                    <div class="office-header">
+                        <h4><i class="fas fa-building me-2"></i>Branch Office - Thane, Maharashtra</h4>
+                        <span class="office-badge">Regional Hub</span>
+                    </div>
+                    <div class="office-content">
+                        <div class="office-address">
+                            <p><strong>Address:</strong><br>
+                            Jai Bhagwan Complex,<br>
+                            Gala No. 3, Jay Bhagwan Compound,<br>
+                            Near Jai Pushpa Kata, Purna Village,<br>
+                            Bhiwandi. Dist. Thane - 421302</p>
+                        </div>
+                        <div class="office-contact">
+                            <p><strong>Phone:</strong> <a href="tel:+919022825977">9022825977</a>, <a href="tel:+917039037742">7039037742</a></p>
+                            <p><strong>Region:</strong> Maharashtra Operations</p>
+                        </div>
+                        <div class="office-services">
+                            <h6>Services Available:</h6>
+                            <ul>
+                                <li>Regional Coordination</li>
+                                <li>Local Pickup/Delivery</li>
+                                <li>Route Planning</li>
+                                <li>Customer Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about our services</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                                How can I track my shipment?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                All our vehicles are equipped with GPS tracking systems. You can get real-time updates on your shipment by calling our customer service or through SMS notifications we send at key delivery milestones.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                                What areas do you cover?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We provide comprehensive coverage across Uttar Pradesh with daily services to major cities like Kanpur, Lucknow, Varanasi, Gorakhpur, and Allahabad. We also serve other UP cities on request.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                                How do I get a quote for my shipment?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can get an instant quote by calling us at +91 9374784899, sending us an email, or filling out our contact form with your shipment details. We provide transparent pricing with no hidden charges.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4">
+                                Is my cargo insured during transport?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we provide comprehensive insurance coverage for all shipments. Our insurance policy covers damage, theft, and loss during transit, giving you complete peace of mind.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We accept various payment methods including cash, bank transfers, cheques, and digital payments. For regular customers, we also offer credit terms with monthly billing cycles.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-white mb-3">Ready to Get Started?</h2>
+                <p class="text-white-50 mb-4">Contact us today for reliable transport solutions tailored to your needs. Our team is ready to help you move your goods safely and efficiently.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919374784899" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                    <a href="mailto:radhamadhav11@rediffmail.com" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
